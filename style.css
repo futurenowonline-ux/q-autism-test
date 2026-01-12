@@ -14,3 +14,5 @@ header { text-align: center; margin-bottom: 30px; }
 #results h2 { font-size: 2em; color: #333; }
 .hidden { display: none; }
 @media (max-width: 600px) { .options { flex-direction: column; } }
+.option.selected { opacity: 0.8; border: 2px solid white; }
+
