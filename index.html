@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQ Autism Spectrum Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Autism Spectrum Quotient (AQ) Test</h1>
+            <p>50 questions. Select Agree or Disagree for each. Results at end.</p>
+            <div class="progress">Question <span id="currentQ">1</span>/50</div>
+        </header>
+        <main id="quiz">
+            <div class="question" id="question"></div>
+            <div class="options">
+                <button class="option agree" data-value="agree">Agree</button>
+                <button class="option disagree" data-value="disagree">Disagree</button>
+            </div>
+            <button id="next" disabled>Next</button>
+        </main>
+        <div id="results" class="hidden">
+            <h2>Your AQ Score: <span id="score"></span>/50</h2>
+            <p id="interpretation"></p>
+            <button onclick="location.reload()">Retake Test</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
